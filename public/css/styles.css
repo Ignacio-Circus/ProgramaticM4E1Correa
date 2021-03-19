@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background-color: #EAC926;
+}
+    .cabeza {
+        text-align: center;
+    }
+        .compra-en-cuotas{
+        display: inline-block;
+    }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+main {
+    background-color: #ebebeb;
+}
