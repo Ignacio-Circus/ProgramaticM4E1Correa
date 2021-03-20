@@ -1,20 +1,94 @@
 * {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 .header {
     background-color: #EAC926;
+    padding: 10px;
 }
     .cabeza {
         text-align: center;
     }
         .compra-en-cuotas{
-        display: inline-block;
+        font-size: 16px;
+        }
+    ul {
+        padding: 0%;
+        font-size: 16px;
     }
             a {
                 text-decoration: none;
                 color: black;
             }
+        .hamburguesa {
+            background-color: rgb(85, 85, 211);
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            width: 50px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 9px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 main {
     background-color: #ebebeb;
 }
+    main section {
+        width: 90%;
+        margin: auto;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    main article {
+        background-color: white;
+        margin: 10px;
+    }
+    main i {
+        padding: 6px;
+        border: solid 2px rgb(36, 184, 36);
+        border-radius: 50px;
+        color: rgb(36, 184, 36);
+    }
+    .detalles {
+        border-top: solid 1px #ebebeb;
+        padding: 15px;
+    }
+        .precios {
+            font-size: 18px;
+        }
+        .descuentos {
+            font-size: 16px;
+            color: rgb(36, 184, 36);
+            ;
+        }
+        .nombre {
+            font-size: 16px;
+            color: #777777;
+            margin-top: 15px
+        }
+
+footer {
+    text-align: center;
+    margin: 10px;
+}
+    footer article{
+        margin-bottom: 10px;
+        margin: 25px;
+    }
+        footer article i {
+            font-size: 40px;
+            color: rgb(82, 82, 253);
+        }
+        .descripciones {
+            font-size: 12px;
+        }
+    footer p.copyright {
+        text-align: left;
+        color: #888888;
+        font-size: 12px;
+    }
