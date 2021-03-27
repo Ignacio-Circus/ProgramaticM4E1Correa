@@ -1,48 +1,62 @@
 * {
     margin: 0px;
+    padding: 0%;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 .header {
     background-color: #EAC926;
-    padding: 10px;
+    padding: 20px;
+    font-size: 12px;
 }
-    .cabeza {
-        text-align: center;
+    .header-arriba {
+        display: flex;
+        flex-flow: wrap row;
     }
-        .compra-en-cuotas{
-        font-size: 16px;
+        .logo {
+            flex: 1 1 30%;
         }
-        
-    ul {
-        padding: 0%;
-        font-size: 16px;
-        display: none;
-    }
-            a {
-                text-decoration: none;
-                color: black;
-            }
-        .hamburguesa {
-            background-color: rgb(85, 85, 211);
-            color: white;
-            font-size: 20px;
+        .buscador {
+            flex: 1 1 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cabeza {
+            margin-top: 10px;
+            flex: 2 1 100%;
             text-align: center;
-            width: 50px;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            border-radius: 9px;
-            margin: auto;
-            margin-bottom: 10px;
         }
+        ul {
+            padding: 0%;
+            display: none;
+        }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            .hamburguesa {
+                
+                background-color: rgb(85, 85, 211);
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                width: 50px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                border-radius: 9px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
 main {
     background-color: #ebebeb;
+    padding-bottom: 20px;
 }
     main section {
         width: 90vw;
         margin: auto;
         padding-top: 10px;
-        padding-bottom: 20px;
+        
     }
     h2 {
         font-size: 24px;
@@ -52,28 +66,39 @@ main {
         margin: 10px;
     }
     main i {
-        padding: 6px;
-        border: solid 2px rgb(36, 184, 36);
-        border-radius: 20px;
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border: solid 1px #39b54a;
+        border-radius: 50%;
         color: rgb(36, 184, 36);
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        background-color: #FFF;
     }
     .detalles {
         border-top: solid 1px #ebebeb;
         padding: 15px;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
     }
         .precios {
             font-size: 18px;
+            flex: 1 1 30%
         }
         .descuentos {
             font-size: 16px;
             color: rgb(36, 184, 36);
-            ;
+            flex: 1 1 70%;
         }
         .nombre {
             font-size: 16px;
             color: #777777;
             display: none;
-            margin-top: 15px
+            flex: 1 1 100%;
         }
 
 footer {
@@ -100,6 +125,10 @@ footer {
     @media (min-width: 361px) {
         main article {
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            flex: 1 1 40%;
+        }
+        main section h2 {
+            flex: 1 1 100%;
         }
         .nombre {
             display: inline-block;
@@ -110,11 +139,39 @@ footer {
         ul {
             display: inline-block;
         }
-        header nav {
-            margin-bottom: 10px;
+        .listas {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul {
+            display: flex;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        main section {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .logo {
+            flex: 1 1 20%;
+        }
+        .buscador {
+            flex: 1 1 20%;
+        }
+        .cabeza{
+            margin-top: 0%;
+            flex: 1 1 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
     @media (min-width: 769px) {
-        
+        main article {
+            flex: 1 1 15%;
+        }
     }
