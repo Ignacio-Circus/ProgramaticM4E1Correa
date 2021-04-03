@@ -7,11 +7,12 @@
 .header {
     background-color: #EAC926;
     padding: 20px;
-    font-size: 12px;
+    font-size: 16px;
 }
     .header-arriba {
         display: flex;
         flex-flow: wrap row;
+        margin-bottom: 20px;
     }
         .logo {
             flex: 1 1 30%;
@@ -167,6 +168,9 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .buscador input {
+            width: 200px;
         }
     }
 
