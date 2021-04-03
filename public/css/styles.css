@@ -183,7 +183,7 @@ footer {
 
 
 main.register {
-    background-color: #ebebebbe;
+    background-color: #ebebeb;
     padding: 20px;
 }
     main.register form {
@@ -205,6 +205,37 @@ main.register {
             flex-flow: column wrap;
         }
             main.register form div.botones button {
-                margin: 7px;
+                margin-top: 7px;
+                margin-bottom: 7px;
                 padding: 5px;
+            }
+
+
+
+main.login {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+    main.login form {
+        display: flex;
+        flex-flow: wrap column;
+    }
+        main.login form div {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+            main.login form div input {
+                width: 100%;
+            }
+        main.login form div.botones {
+            display: flex;
+            flex-flow: column wrap;
+        }
+            main.login form div.botones button {
+                margin-top: 7px;
+                margin-bottom: 7px;
+                padding: 5px;
+                background-color: rgb(0, 0, 180);
+                color: white;
+                border-radius: 5px;
             }
