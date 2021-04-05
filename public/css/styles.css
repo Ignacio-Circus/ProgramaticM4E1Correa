@@ -190,8 +190,17 @@ footer {
             0% {-webkit-transform: rotate(0deg);}
             100% {-webkit-transform: rotate(360deg);}
         }
+        footer {
+            display: flex;
+            flex-flow: wrap row;
+            
+        }
+            footer article {
+                flex: 1 1 25%;
+            }
     }
 
+    
 
 main.register {
     background-color: #ebebeb;
@@ -246,7 +255,10 @@ main.login {
                 margin-top: 7px;
                 margin-bottom: 7px;
                 padding: 5px;
-                background-color: rgb(0, 0, 180);
-                color: white;
                 border-radius: 5px;
+            }
+            main.login form div.botones button:hover {
+                background-color: #0022AA;
+                color: white;
+                transition-duration: 300ms;
             }
