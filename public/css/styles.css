@@ -125,14 +125,11 @@ footer {
 
     @media (min-width: 361px) {
         main.home article {
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
             flex: 1 1 40%;
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
         }
         main.home section h2 {
             flex: 1 1 100%;
-        }
-        .nombre {
-            display: inline-block;
         }
         .hamburguesa {
             display: none;
@@ -176,10 +173,24 @@ footer {
 
     @media (min-width: 769px) {
         main.home article {
+            box-shadow: none;
             flex: 1 1 15%;
         }
+        main.home article:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            transition-duration: 300ms;
+        }
+        main.home article:hover .nombre {
+            display: block;
+        }
+        main.home article:hover i {
+            animation: rotate 1.5s infinite normal;
+        }
+        @keyframes rotate {
+            0% {-webkit-transform: rotate(0deg);}
+            100% {-webkit-transform: rotate(360deg);}
+        }
     }
-
 
 
 main.register {
